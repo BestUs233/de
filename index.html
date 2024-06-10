@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Joshua Kimmich</title>
+		<style>
+			* {
+			  outline: none !important;
+			  border: none !important;
+			}
+			.container {
+				/* 设置容器大小为视窗大小 */
+				height: 100vh;
+				width: 100vw;
+				/* 将背景图片设置为容器元素 */
+				background-image: url('./title01.png');
+				/* 替换为您的图像 URL */
+
+				background-size: cover;
+				/* 使图像等比缩放以填满容器 */
+				background-position: center;
+				/* 将图像居中 */
+				text-align: center;
+				/* 将文本居中 */
+				color: white;
+				/* 设置文本颜色为白色 */
+				display: flex;
+				/* 使用 flexbox 布局 */
+				flex-direction: column;
+				/* 将 flexbox 布局设置为垂直方向 */
+				/* justify-content: center;  将内容垂直居中 */
+				align-items: center;
+				/* 将内容水平居中 */
+
+			}
+
+			h1 {
+				font-size: 3em;
+				/* 设置标题字体大小 */
+				margin: 50px 0 0 0;
+				/* 删除默认边距 */
+			}
+
+			p {
+				font-size: 1.2em;
+				/* 设置段落字体大小 */
+				margin-top: 0.5em;
+				/* 添加顶部边距 */
+			}
+
+			.titleimg {
+				display: block;
+				margin: 0 auto;
+
+			}
+
+			.titleimg img {
+				width: 50px;
+				padding: 0 20px;
+			}
+
+			.image-container {
+				display: flex;
+				/* 使用 flexbox 布局 */
+				flex-wrap: wrap;
+				/* 换行 */
+				justify-content: center;
+				/* 将内容水平居中 */
+			}
+
+			.image-container image {
+				width: 25%;
+				/* 设置图像宽度 */
+				height: auto;
+				/* 自动调整图像高度 */
+				margin: 10px;
+				/* 添加图像边距 */
+				border: 1px solid #ddd;
+				/* 添加图像边框 */
+			}
+
+			.titlename {
+				text-align: center;
+				padding: 20px;
+			}
+
+			#countdown {
+				width: 100%;
+				height: 400px;
+				background-image: url('./hbg.png');
+				/* 替换成你的图片地址 */
+				background-size: cover;
+				background-position: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			#top-text {
+				text-align: center;
+				color: white;
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+
+			#timer {
+				background-color: white;
+				padding: 5px 10px;
+				border-radius: 5px;
+				color: black;
+				font-size: 24px;
+				display: flex;
+				/* 将计时器元素设置为 flex 布局 */
+				align-items: center;
+				/* 使子元素垂直居中 */
+				justify-content: center;
+				/* 使子元素水平居中 */
+			}
+
+			#timer span {
+				margin-left: 10px;
+				/* 在每个时间部分之间添加间距 */
+			}
+
+			.about {
+				width: 100vw;
+				/* Set the width of the container */
+				margin: 0 auto;
+				/* Center the container horizontally */
+				background-color: #161616;
+				color: #fff;
+			}
+
+			samp{
+				font-size: 14px;
+			}
+
+			.about description {
+				font-size: 16px;
+				/* Set the font size for the description */
+				line-height: 1.5;
+				/* Add some breathing room between lines of text */
+			}
+
+			.howtobuy {
+				display: flex;
+				padding-bottom: 50px;
+			}
+
+			.side {
+				flex: 1;
+				/* Make each side take up half the available space */
+				display: flex;
+				flex-direction: column;
+				/* Arrange the image and description vertically */
+				align-items: center;
+				/* Center the content horizontally */
+				padding: 20px;
+				border: 1px solid #ccc;
+			}
+
+			.boximg{
+				width: 25%;
+				padding:20px;
+			}
+
+			.description {
+				font-size: 16px;
+				line-height: 1.5;
+			}
+			
+			@media screen and (max-width: 800px) {
+				.howtobuy {
+				    display: inline;
+				  }
+				
+				
+				.bodyname{
+					background-color: #161616;
+				}
+
+				.howtobuy img{
+					width: 100vw;
+				}
+				.boximg {
+    width: 40%;
+    padding: 18px;
+}
+.container {
+    height: 50vh;
+    width: 100vw;
+    background-image: url(./title01.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 2em;
+    margin: 50px 0 0 0;
+}
+
+#timer {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+		}		
+			}
+			
+			
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="bodyname">It's Euro2024's world, we're just living in it!</h1>
+			<p>CA:BTA</p>
+			<div class="titleimg">
+				
+				<!-- telegram -->
+				<a href="#"><img src="./telegram.png" alt="" /></a>
+				
+				<!-- twitter -->
+				<a href="#"><img src="./twitter.png" alt="" /></a>
+				
+				<!-- pump -->
+				<a href="#"><img src="./pump.png" alt="" /></a>
+			</div>
+		</div>
+		<div class="titlename">
+			<h1>The Art of Football </h1>
+			<p>Our Meme Gallery</p>
+		</div>
+		<div class="image-container">
+			<img class="boximg" src="./p1.png" alt="Image 1" class="image">
+			<img class="boximg" src="./p2.png" alt="Image 1" class="image">
+			<img class="boximg" src="./p3.png" alt="Image 1" class="image">
+			<img class="boximg" src="./p4.png" alt="Image 1" class="image">
+			<img class="boximg" src="./p5.png" alt="Image 1" class="image">
+			<img class="boximg" src="./p6.png" alt="Image 1" class="image">
+		</div>
+		<div id="countdown">
+			<h1 style="color: #fff;"> EURO 2024</h1>
+			<div id="top-text">
+				Tick tock tick tock to the second greatest tournament in world football - the EURO's 2024
+			</div>
+			<div id="timer">
+				<span id="days"></span>
+				<span>Days</span>
+				<span id="hours"></span>
+				<span>Hours</span>
+				<span id="minutes"></span>
+				<span>Mins</span>
+				<span id="seconds"></span>
+				<span>Seconds</span>
+			</div>
+		</div>
+
+		<div class="about">
+			<div class="titlename">
+				<h1>About Joshua Kimmich</h1>
+				
+			</div>
+			<img style="width: 90vw;
+    display: block;
+    margin: 0 auto;" src="./about.png" alt="Image description" class="image">
+			<p class="description" style="padding: 0 20vw;padding-bottom: 50px;">Joshua Kimmich's a MAN, and did you know ONE MAN dies every 45 minutes
+				from prostate cancer, lets unite football fans and change this. For every 100,000mc hit, $50 will be
+				donated to Prostate Cancer DE.
+				You can also donate here: Donate | Prostate Cancer DE
+				"he's got great feet for a big man"!
+				CA: BTA.</p>
+
+		</div>
+<div class="titlename">
+				<h1>TOKEN TACTICS</h1>
+				
+			</div>
+		<div class="howtobuy">
+			
+			<div class="side">
+				<img src="./how-left.png" alt="Image 1" class="image">
+				<p class="description">Gamified Burns - Let's light this bitch up. GOALS GOALS GOALS!</p>
+				<samp>We want to make this fun, entertaining and linked to the success of Joshua Kimmich and Germany. Future tokens will be burned when / if:
+
+
+
+<br />Joshua Kimmich scores
+<br />Joshua Kimmich assists
+<br />Germany score
+<br />Germany win 
+<br />Germany progress 
+
+
+<br />The rest? well, its a meme. 
+<br />let's break the internet or burn trying.</samp>
+			</div>
+			<div class="side">
+				<img src="./how-right.png"Image 2" class="image">
+				<p class="description">We will be launched on Pumpfun.com.</p>
+			</div>
+		</div>
+
+
+<div class="about">
+			<div class="titlename">
+				<h1>HOW TO BUY</h1>
+			</div>
+			<div class="howtobuy">
+						
+						<div class="side">
+							<h2>Create A Wallet</h2>
+							<p class="description">Download Phantom or your wallet of choice from the app store or Google Play for free. Desktop users, download your browser's extension by going to Phantom.</p>
+						</div>
+						<div class="side">
+							<h2>Get some $SOL</h2>
+							<p class="description">Have $SOL in your wallet to switch to $Joshua Kimmich. If you don’t have any $SOL, you can buy directly on Phantom, transfer from another wallet, or buy on another exchange and send it to your wallet.</p>
+						</div>
+						<div class="side">
+							<h2>Go to Birdeye</h2>
+							<p class="description">Connect to Birdeye. Go to Birdeye in your browser inside your Phantom app. Connect your wallet. Paste the $Joshua Kimmich token address into Birdeye, select $Joshua Kimmich, and confirm. When Phantom prompts you for a wallet signature, sign.</p>
+						</div>
+					</div>
+			<p style="padding: 0 50px; font-size: 12px;text-align: center;"> Legal Disclaimer: $Joshua Kimmich is a meme coin with no intrinsic value or expectation of financial return. $Joshua Kimmich is completely useless and for entertainment purposes only. When you purchase $Joshua Kimmich, you are agreeing that you have seen this disclaimer. </p>
+			<p style="padding: 20px; font-size: 12px;text-align: center;">Copyright 2024 Joshua Kimmich</p>
+		</div>
+		
+		
+
+		<script>
+			// 设置目标时间
+			const targetTime = new Date('2024-06-13 04:00:00'); // 替换成你的目标时间
+
+			// 更新倒计时
+			function updateCountdown() {
+				const now = new Date();
+				const diff = targetTime - now;
+
+				// 计算剩余天数
+				const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+				// 计算剩余小时
+				const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+				// 计算剩余分钟
+				const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+				// 计算剩余秒数
+				const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+				// 格式化时间字符串
+				const formattedTime = `${days}天 ${hours}小时 ${minutes}分钟 ${seconds}秒`;
+
+				// 更新倒计时显示
+				document.getElementById('days').textContent = days;
+				document.getElementById('hours').textContent = hours.toString().padStart(2, '0'); // 使用 padStart() 函数在小时前面填充 0
+				document.getElementById('minutes').textContent = minutes.toString().padStart(2,
+				'0'); // 使用 padStart() 函数在分钟前面填充 0
+				document.getElementById('seconds').textContent = seconds.toString().padStart(2,
+				'0'); // 使用 padStart() 函数在秒数前面填充 0
+
+				// 每秒检查一次
+				if (diff > 0) {
+					setTimeout(updateCountdown, 1000);
+				}
+			}
+
+			// 开始倒计时
+			updateCountdown();
+		</script>
+	</body>
+</html>
